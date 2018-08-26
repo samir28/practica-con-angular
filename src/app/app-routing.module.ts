@@ -1,6 +1,3 @@
-
-
 @NgModule
-export class AppRouting{
-
+export class AppRouting {
 }
