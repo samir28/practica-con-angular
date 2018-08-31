@@ -23,6 +23,6 @@ const app_routes: Routes = [
     ]
 
 })
-export class AppRouting {
+export class AppRoutingModule {
 
 }
