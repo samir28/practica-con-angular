@@ -22,23 +22,17 @@
         </li>
         <li class="rk-menu__item"><a routerLink="item" class="rk-menu__link">Portfolio</a>
           <nav class="rk-menu__sub">
-            <ul class="rk-container">
-              <li class="rk-menu__item"><a href="portfolio.html" class="rk-menu__link">Flex</a></li>
-              <li class="rk-menu__item"><a href="portfolio-alt.html" class="rk-menu__link">Switch</a></li>
-              <li class="rk-menu__item"><a href="portfolio-raw.html" class="rk-menu__link">Static</a></li>
-              <li class="rk-menu__item"><a href="portfolio-masonry.html" class="rk-menu__link">Masonry</a></li>
-            </ul>
           </nav>
         </li>
       </ul>
-      <form class="rk-search">
-        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+      <div class="rk-search">
+        <input type="text" placeholder="Buscar..." id="urku-search" class="rk-search-field" (keyup.enter)="buscarProducto (txtbuscar.value)" #txtbuscar>
         <label for="urku-search">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-search"></use>
           </svg>
         </label>
-      </form>
+      </div>
     </nav>
   </div>
 </header>
