@@ -1,5 +1,3 @@
-import { reject } from 'q';
-import { resolve } from 'dns';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Producto } from '../interface/productos.interface';
@@ -19,6 +17,7 @@ export class ProductosService {
    }
 
   private cargarProductos() {
+    // tslint:disable-next-line:no-shadowed-variable
     return new Promise( (resolve, reject) => {
       this.http.get('https://angular-html-54241.firebaseio.com/productos_id.json')
               .subscribe((resp: Producto[]) => {
